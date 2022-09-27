@@ -1,0 +1,141 @@
+{
+    "ignorePatterns": [
+        "dist",
+        "node_modules"
+    ],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "comma-dangle": 0,
+        "react/jsx-uses-vars": 1,
+        "react/display-name": 1,
+        "no-unused-vars": "warn",
+        "no-unexpected-multiline": "warn",
+        "max-len": [
+            "error",
+            {
+                "ignoreUrls": true,
+                "code": 80
+            }
+        ],
+        "prefer-template": "off",
+        "indent": [
+            "error",
+            2
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ],
+        "no-var": "error",
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "camelcase": "error",
+        "no-multi-assign": "error",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "no-array-constructor": "error",
+        "no-new-object": "error",
+        "no-new-wrappers": "error",
+        "no-nested-ternary": "error",
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "error"
+                ]
+            }
+        ],
+        "no-template-curly-in-string": "error",
+        "no-self-compare": "error",
+        "func-names": [
+            "error",
+            "as-needed"
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "import/no-extraneous-dependencies": [
+            "off",
+            {
+                "devDependencies": false
+            }
+        ]
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "prettier",
+        "plugin:react/recommended",
+        "@react-native-community"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "plugins": [
+        "prettier",
+        "react"
+    ],
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "15.6.1"
+        },
+        "alias": {
+            "map": [
+                [
+                    "src",
+                    "../src"
+                ],
+                [
+                    "store",
+                    "../src/store"
+                ],
+                [
+                    "components",
+                    "../src/components"
+                ],
+                [
+                    "pages",
+                    "../src/pages"
+                ],
+                [
+                    "assets",
+                    "../src/assets"
+                ]
+            ],
+            "extensions": [
+                ".ts",
+                ".js",
+                ".jsx",
+                ".json"
+            ]
+        }
+    }
+}
